@@ -2,11 +2,10 @@ const parallax = document.getElementById("home-img-lg");
 const parallax1 = document.getElementById("parallax1");
 const parallax2 = document.getElementById("parallax2");
 
-window.addEventListener("scroll", function()
-{
-    let offset = window.pageYOffset;
-    parallax.style.backgroundPositionX = offset*(-0.3)-100 + "px";
-})
+// Keep hero image fixed instead of parallax shifting on scroll.
+if (parallax) {
+    parallax.style.backgroundPositionX = "-100px";
+}
 
 
 window.addEventListener("scroll", function()
