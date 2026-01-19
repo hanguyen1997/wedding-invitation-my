@@ -185,7 +185,6 @@ a:hover{
     justify-content: space-between;
 }
 .home-img{
-    background-image: url("images/QUYNH & NGUYEN-3453.jpg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -232,7 +231,6 @@ a:hover{
     margin: 8vh 0;
 }
 .timeline-img{
-    background-image: url("images/QUYNH & NGUYEN-0340_websize.jpg");
     height: 70vh;
     width: 30vw;
     background-position: center;
@@ -325,9 +323,12 @@ a:hover{
 
 .gallery{
     display: flex;
-    padding: 20vh 0;
+    padding: 10vh 0;
     justify-content: center;
     align-items: center;
+}
+.gallery-tight{
+    margin-top: -20vh;
 }
 .gallery-img{
     width: 30vw;
@@ -337,20 +338,20 @@ a:hover{
     background-position: center;
 }
 .gallery-img:nth-child(1){
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic3.jpg?alt=media&token=32a76585-cbeb-41f5-8921-6ad1ff60aa79);
     background-position-x: right;
 }
 .gallery-img:nth-child(3){
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic4.jpg?alt=media&token=3bde5693-e5c8-412d-bd47-1ef972258406);
 }
 .gallery-img:nth-child(2){
     background-position-y: top;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic5.jpg?alt=media&token=d9ef9475-ec6d-41ca-8cfd-3e45b70139d3);
 }
 @media (max-width:1000px){
     .gallery{
         flex-direction: column;
-        padding: 0;
+        padding: 4vh 0;
+    }
+    .gallery-tight{
+        margin-top: -2vh;
     }
     .gallery-img{
         width: 100vw;
@@ -389,11 +390,17 @@ a:hover{
 .hands{
     height: 120vh;
     width: 100%;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic6.jpg?alt=media&token=febecde7-9479-4a1e-8402-28f021228422);
     background-size: cover;
     background-position-y: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+}
+@media (max-width:1000px){
+    .hands{
+        height: 60vh;
+        background-attachment: scroll;
+        background-position: center;
+    }
 }
 
     /* <===================STAY===================> */
@@ -445,7 +452,6 @@ a:hover{
     display: block;
     height: 100vh;
     width: 40vw;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic7.jpg?alt=media&token=79b8d974-04ff-4b2d-bed5-82638399b34e);
     background-size: cover;
     background-position-y: top;
     background-repeat: no-repeat;
