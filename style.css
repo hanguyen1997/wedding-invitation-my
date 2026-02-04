@@ -61,7 +61,7 @@ h3{
 .text{
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: var(--text-size);
-    line-height: 1.3rem;
+    line-height: 2.3rem;
 }
 .huge-btn{
     display: block;
@@ -90,7 +90,7 @@ h3{
 /* <===================NAVBAR===================> */
 
 nav{
-    height: 3vh;
+    height: 0vh;
     width: 100%;
     margin-bottom: 20vh;
 }
