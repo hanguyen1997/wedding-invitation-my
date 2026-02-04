@@ -315,7 +315,7 @@ a:hover{
         width: 100%;
         margin: 5px 0;
         font-size: var(--text-size);
-        line-height: var(--text-size);
+        line-height: 2.5rem;
     }
 }
 

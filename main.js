@@ -2,14 +2,36 @@ const parallax = document.getElementById("home-img-lg");
 const parallax1 = document.getElementById("parallax1");
 const parallax2 = document.getElementById("parallax2");
 
-const lazyBackgrounds = document.querySelectorAll("[data-bg]");
+const lazyBackgrounds = document.querySelectorAll("[data-bg],[data-bg-small]");
+const pickResponsiveBackground = (element) => {
+    const small = element.getAttribute("data-bg-small");
+    const medium = element.getAttribute("data-bg-medium");
+    const large = element.getAttribute("data-bg-large");
+
+    if (!small && !medium && !large) {
+        return element.getAttribute("data-bg");
+    }
+
+    const targetWidth = window.innerWidth * (window.devicePixelRatio || 1);
+    if (large && targetWidth >= 1400) {
+        return large;
+    }
+    if (medium && targetWidth >= 900) {
+        return medium;
+    }
+    return small || medium || large;
+};
+
 const loadBackground = (element) => {
-    const background = element.getAttribute("data-bg");
+    const background = pickResponsiveBackground(element);
     if (!background) {
         return;
     }
     element.style.backgroundImage = `url("${background}")`;
     element.removeAttribute("data-bg");
+    element.removeAttribute("data-bg-small");
+    element.removeAttribute("data-bg-medium");
+    element.removeAttribute("data-bg-large");
 };
 
 if ("IntersectionObserver" in window) {
