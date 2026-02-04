@@ -1,6 +1,6 @@
 /* <===================TYPOGRAPHY & FONTS===================> */
 
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Spectral:wght@300;400;600;700&display=swap');
 
 /* <===================CSS VARIABLES===================> */
 
@@ -19,7 +19,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Spectral', serif;
     color: #212121;
 }
 html{
@@ -290,7 +290,9 @@ a:hover{
     margin: 10vh 0;
 }
 #story h3{
-    width: 40vw;
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
 }
 #story p{
     width: 100%;
